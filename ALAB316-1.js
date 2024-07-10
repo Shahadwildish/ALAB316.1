@@ -1,14 +1,13 @@
-// DOM Manipulation Lab (Part One)
 
-// Part 1: Getting Started
+// Part 1:
 
 // Select and cache the <main> element in a variable named mainEl
 const mainEl = document.querySelector('main');
 
-// Set the background color of mainEl to the value stored in the --main-bg CSS custom property
+// Set the background color to the value stored in the --main-bg
 mainEl.style.backgroundColor = 'var(--main-bg)';
 
-// Set the content of mainEl to <h1>DOM Manipulation</h1>
+// Set the content of mainEl
 mainEl.innerHTML = '<h1>DOM Manipulation</h1>';
 
 // Add a class of flex-ctr to mainEl
@@ -22,7 +21,7 @@ const topMenuEl = document.querySelector('#top-menu');
 // Set the height of the topMenuEl element to be 100%
 topMenuEl.style.height = '100%';
 
-// Set the background color of topMenuEl to the value stored in the --top-menu-bg CSS custom property
+// Set the background color of topMenuEl to the value stored in the --top-menu-bg
 topMenuEl.style.backgroundColor = 'var(--top-menu-bg)';
 
 // Add a class of flex-around to topMenuEl
@@ -50,12 +49,12 @@ const menuLinks = [
   }
 ];
 
-// Iterate over the entire menuLinks array and for each "link" object
+// Iterate over the entire menuLinks array 
 menuLinks.forEach(link => {
   // Create an <a> element
   const aEl = document.createElement('a');
   
-  // On the new element, add an href attribute with its value set to the href property of the "link" object
+  // On the new element, add an href attribute with its value 
   aEl.setAttribute('href', link.href);
   
   // Set the new element's content to the value of the text property of the "link" object
